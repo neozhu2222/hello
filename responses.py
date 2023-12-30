@@ -18,5 +18,3 @@ def handle_response(message) -> str:
     
     if lmessage == "time":
         return str(datetime.datetime.now().strftime("%H:%M:%S"))
-    
-    return "code not working"

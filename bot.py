@@ -32,7 +32,7 @@ def run_discord_bot():
 
         if user_message[0] == "?":
             user_message = user_message[1:]
-            await message.channel.send(responses.handle_response(user_message))
+            await message.author.send(responses.handle_response(user_message))
         else:
             await message.channel.send(responses.handle_response(user_message))
         
